@@ -53,3 +53,16 @@ pip install -r requirements.txt
 
 # Open notebook
 jupyter notebook [updated]TelecomChurn.ipynb
+```
+---
+
+## Future Improvements
+- Add interpretability with SHAP/LIME.
+- Build a Streamlit dashboard for churn predictions.
+- Automate model retraining with new data.
+---
+
+## Author
+Rhi Carmel
+
+• 📎 [LinkedIn](http://linkedin.com/rhiannonfilli)
