@@ -63,6 +63,6 @@ jupyter notebook [updated]TelecomChurn.ipynb
 ---
 
 ## Author
-Rhi Carmel
+**Rhiannon Fillingham**  
 
 • 📎 [LinkedIn](http://linkedin.com/rhiannonfilli)
