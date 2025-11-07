@@ -44,24 +44,27 @@ Built to identify customers likely to leave so marketing can offer retention inc
 
 ---
 
-## Installing
-```bash
-# Clone repo
-git clone https://github.com/rhicarmel/telecom-churn-prediction.git
-cd telecom-churn-prediction
+### Running the Project
+1. Clone  
+   `git clone https://github.com/rhicarmel/telecom-churn-prediction.git`
+2. Install  
+   `pip install -r requirements.txt`
+3. Launch notebook  
+   `jupyter notebook "[updated]TelecomChurn.ipynb"`
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Open notebook
-jupyter notebook [updated]TelecomChurn.ipynb
-```
 ---
 
 ## Future Improvements
 - Add interpretability with SHAP/LIME.
 - Build a Streamlit dashboard for churn predictions.
 - Automate model retraining with new data.
+---
+
+### Reproducibility
+- Train and test split is stratified by `Churn`  
+- Random seeds set for NumPy, Python, CatBoost  
+- Metrics reported on held-out test set
+
 ---
 
 ## Author
