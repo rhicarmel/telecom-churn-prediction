@@ -1,14 +1,10 @@
-# Python
 __pycache__/
 .ipynb_checkpoints/
 *.pyc
+.DS_Store
 
-# Data and models
 data/*
 !data/.gitkeep
 models/
 *.joblib
 *.pkl
-
-# OS and editor
-.DS_Store
