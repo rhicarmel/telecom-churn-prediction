@@ -1,0 +1,12 @@
+name: telecom-churn
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - catboost
+      - scikit-learn
+      - pandas
+      - numpy
+      - matplotlib
+      - seaborn
+      - shap
