@@ -1,0 +1,10 @@
+telecom-churn-prediction/
+├── README.md
+├── [updated]TelecomChurn.ipynb
+├── requirements.txt
+├── environment.yml          # optional
+├── .gitignore
+├── data/
+│   └── .gitkeep
+├── models/                  # optional for saved artifacts
+└── assets/                  # plots, screenshots
