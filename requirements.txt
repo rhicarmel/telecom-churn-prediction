@@ -4,6 +4,6 @@ lightgbm>=4.0
 scikit-learn>=1.3
 pandas>=2.0
 numpy>=1.24
-matplotlib
+matplotlib==3.7.1
 seaborn
 shap
