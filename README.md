@@ -7,9 +7,9 @@ Built to identify customers likely to leave so marketing can offer retention inc
 **Goal:** Predict churn with high accuracy and AUC-ROC.  
 **Best Model:** 🏆 CatBoost (AUC-ROC = 0.8453 | Accuracy = 0.8034)
 
-🔗 [View the full notebook here](./[updated]TelecomChurn.ipynb)
+🔗 [View the full notebook here](./TelecomChurn.ipynb)
 
-▶️ [Interactive App](https://deepnote.com/app/projects-8f6f/Predicting-Telecom-Customer-Churn-Insights-and-Strategies-23880e3f-a5be-4f31-87df-79348fce5c4c?utm_source=share-modal&utm_medium=product-shared-content&utm_campaign=data-app&utm_content=23880e3f-a5be-4f31-87df-79348fce5c4c)  
+🔗 [Run the interactive app on Streamlit](https://telecom-churn-prediction-rhi-222.streamlit.app/)
 
 ---
 
