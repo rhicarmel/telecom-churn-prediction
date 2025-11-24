@@ -1,56 +1,73 @@
-# 📡 TELECOM CUSTOMER CHURN PREDICTION
+# 📡 Telecom Customer Churn Prediction
 
 ## Overview
-A machine learning project predicting telecom customer churn for **Interconnect** using demographic, contract, and service data.  
-Built to identify customers likely to leave so marketing can offer retention incentives.
+A complete machine learning pipeline predicting customer churn for Interconnect using demographic, contract, internet, and phone service data.  
+The project identifies customers likely to leave so retention teams can intervene with targeted offers.
 
-**Goal:** Predict churn with high accuracy and AUC-ROC.  
-**Best Model:** 🏆 CatBoost (AUC-ROC = 0.8453 | Accuracy = 0.8034)
+**Goal:** Build an accurate churn prediction model with strong AUC-ROC.  
+**Best Model:** **CatBoost**  
+- **AUC-ROC:** 0.845  
+- **Accuracy:** 0.803  
 
-🔗 [View the full notebook here](./TelecomChurn.ipynb)
+🔗 **Run Notebook:**  
+[`TelecomChurn.ipynb`](https://github.com/rhicarmel/telecom-churn-prediction/blob/main/notebooks/TelecomChurn.ipynb)
 
-🔗 [Run the interactive app on Streamlit](https://telecom-churn-prediction-rhi-222.streamlit.app/)
+🔗 **Run the interactive app on Streamlit:**  
+https://telecom-churn-prediction-rhi-222.streamlit.app/
 
 ---
 
 ## Functionality
-- Analyzes 7,000+ customer records across contract, internet, and phone data.  
-- Preprocesses, encodes, and merges multiple datasets.  
-- Tests multiple models (Logistic Regression, Random Forest, Gradient Boosting, CatBoost).  
-- Evaluates performance using AUC-ROC and accuracy metrics.  
-- Highlights top churn indicators (contract type, payment method, tenure, service usage).
+- Processes and merges **7,000+** customer records from four datasets.  
+- Cleans contract, internet, and billing fields; converts targets; handles missing values.  
+- Encodes categorical variables and scales numeric features.  
+- Trains and compares multiple models:
+  - Logistic Regression  
+  - Random Forest  
+  - Gradient Boosting  
+  - CatBoost (final model)  
+- Evaluates performance using **AUC-ROC** and **accuracy**.  
+- Visualizes churn patterns and feature importance.
 
 ---
 
 ## Key Insights
-- Month-to-month contracts → highest churn.  
-- Long-term contracts & multiple services → higher retention.  
-- Electronic check payments → strong churn predictor.
+- **Month-to-month contracts** show the highest churn rate.  
+- Customers on **one-year or two-year contracts** have significantly better retention.  
+- **Electronic check payments** are strongly associated with higher churn.  
+- Long-term customers with multiple bundled services are more likely to stay.
 
 ---
 
 ## Results
+
 | Model | AUC-ROC | Accuracy |
-|--------|----------|-----------|
+|-------|---------|----------|
 | Logistic Regression | 0.826 | 0.788 |
 | Gradient Boosting | 0.845 | 0.794 |
 | **CatBoost (Final)** | **0.845** | **0.803** |
 
+CatBoost delivered the best balance of performance and stability, and is used in the Streamlit application.
+
 ---
 
 ## Tech Stack
-**Python**, Pandas, NumPy, Scikit-learn, CatBoost, XGBoost, Matplotlib, Seaborn  
-*Developed in Jupyter Notebook*
+- **Python**
+- **Pandas**, **NumPy**
+- **Scikit-learn**, **CatBoost**, **XGBoost**
+- **Matplotlib**, **Seaborn**
+- **Streamlit** (interactive app)
+- Developed in **Jupyter Notebook**
 
 ---
 
-### Running the Project
+## Running the Project
 1. Clone  
    `git clone https://github.com/rhicarmel/telecom-churn-prediction.git`
 2. Install  
    `pip install -r requirements.txt`
 3. Launch notebook  
-   `jupyter notebook "[updated]TelecomChurn.ipynb"`
+   `jupyter notebook "TelecomChurn.ipynb"`
 
 ---
 
