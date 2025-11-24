@@ -36,7 +36,7 @@ def load_raw_data():
     internet_df = pd.read_csv("data/internet.csv")
     phone_df = pd.read_csv("data/phone.csv")
 
-    # Create target from EndDate (same as notebook)
+    # Create target from EndDate
     contract_df["EndDate"] = contract_df["EndDate"].replace("No", np.nan)
     contract_df["EndDate"] = pd.to_datetime(contract_df["EndDate"])
     contract_df["Churn"] = contract_df["EndDate"].notna().astype(int)
@@ -47,6 +47,13 @@ def load_raw_data():
         .merge(internet_df, on="customerID", how="left")
         .merge(phone_df, on="customerID", how="left")
     )
+
+    # Fix numeric columns exactly like the notebook
+    df["TotalCharges"] = pd.to_numeric(df["TotalCharges"], errors="coerce")
+    df["MonthlyCharges"] = pd.to_numeric(df["MonthlyCharges"], errors="coerce")
+
+    df["TotalCharges"].fillna(df["TotalCharges"].median(), inplace=True)
+    df["MonthlyCharges"].fillna(df["MonthlyCharges"].median(), inplace=True)
 
     return df
 
@@ -174,7 +181,8 @@ if page == "Overview":
     st.markdown("---")
     st.subheader("Churn Distribution")
 
-    churn_counts = df_raw["Churn"].value_counts().rename({0: "Active", 1: "Churned"})
+    churn_counts = df_raw["Churn"].value_counts().rename(
+        {0: "Active", 1: "Churned"})
     fig, ax = plt.subplots()
     ax.bar(churn_counts.index, churn_counts.values)
     ax.set_xlabel("Status")
@@ -214,4 +222,3 @@ elif page == "Customer Explorer":
             st.write(f"**Model decision:** **{pred_class}**")
         else:
             st.error("Could not build features for this customer.")
-
