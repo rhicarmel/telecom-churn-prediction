@@ -24,10 +24,14 @@ st.write(
     "explore churn patterns and view model predictions for individual customers."
 )
 
+st.caption(
+    "Trains a CatBoost model on telecom customer data to estimate churn risk "
+    "and explore behavior patterns across the customer base."
+)
+
 # ---------------------------------------------------------
 # Data loading and preprocessing
 # ---------------------------------------------------------
-
 
 @st.cache_data
 def load_raw_data():
@@ -198,7 +202,13 @@ if page == "Overview":
 # Customer Explorer page
 # ---------------------------------------------------------
 elif page == "Customer Explorer":
+
     st.subheader("Customer Churn Prediction")
+    st.caption(
+        "Select a customer to view their profile and the model's estimated probability "
+        "that they will churn. The prediction is based on contract details, services, "
+        "and billing information."
+    )
 
     customer_ids = df_raw["customerID"].sort_values().unique()
     selected_id = st.selectbox("Select a customer ID", customer_ids)
