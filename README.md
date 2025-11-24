@@ -9,11 +9,11 @@ The project identifies customers likely to leave so retention teams can interven
 - **AUC-ROC:** 0.845  
 - **Accuracy:** 0.803  
 
-🔗 **Run Notebook:**  
-[`TelecomChurn.ipynb`](https://github.com/rhicarmel/telecom-churn-prediction/blob/main/notebooks/TelecomChurn.ipynb)
+### Run Notebook: 
+[![Run Notebook](https://img.shields.io/badge/📓_Open_Notebook-orange?style=for-the-badge)](https://github.com/rhicarmel/telecom-churn-prediction/blob/main/notebooks/TelecomChurn.ipynb)
 
-🔗 **Run the interactive app on Streamlit:**  
-https://telecom-churn-prediction-rhi-222.streamlit.app/
+### Run the interactive app on Streamlit:
+[![Streamlit App](https://img.shields.io/badge/🚀_Open_Streamlit_App-ff4b4b?style=for-the-badge)](https://telecom-churn-prediction-rhi-222.streamlit.app/)
 
 ---
 
@@ -52,11 +52,15 @@ CatBoost delivered the best balance of performance and stability, and is used in
 ---
 
 ## Tech Stack
-- **Python**
-- **Pandas**, **NumPy**
-- **Scikit-learn**, **CatBoost**, **XGBoost**
-- **Matplotlib**, **Seaborn**
-- **Streamlit** (interactive app)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![CatBoost](https://img.shields.io/badge/CatBoost-FF6F00?style=for-the-badge)
+![XGBoost](https://img.shields.io/badge/XGBoost-0044cc?style=for-the-badge)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-013243?style=for-the-badge&logo=matplotlib&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-4C9?style=for-the-badge)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 - Developed in **Jupyter Notebook**
 
 ---
@@ -85,6 +89,6 @@ CatBoost delivered the best balance of performance and stability, and is used in
 ---
 
 ## Author
-**Rhiannon Fillingham**  
+**Rhiannon Fillingham**
 
-• 📎 [LinkedIn](http://linkedin.com/rhiannonfilli)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/rhiannonfilli)
